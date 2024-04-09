@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    /* colors */
+    --color-primary-light-cyan: hsl(193, 38%, 86%);
+    --color-primary-neon-green: hsl(150, 100%, 66%);
+    --color-neutral-grayish-blue: hsl(217, 19%, 38%);
+    --color-neutral-Dark-grayish-blue: hsl(217, 19%, 24%);
+    --color-neutral-dark-blue: hsl(218, 23%, 16%);
+    /* fonts */
+    --font-family: 'Manrope', sans-serif;
+    /* font-size */
+    --font-size-quote: 28px;
+    /* font weight */
+    --font-weight-bold: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    font-size: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    background-color: var(--color-neutral-dark-blue);
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+}
+
+main {
+    text-align: center;
+    background-color: var(--color-neutral-Dark-grayish-blue);
+    max-width: 420px;
+    width: 100%;
+    height: fit-content;
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin:0 24px;
+}
+
+main > * {
+    display: block;
+}
+
+main strong {
+    color: var(--color-primary-neon-green);
+    letter-spacing: 2px;
+    font-family: var(--font-family);
+}
+
+.advice-quote {
+    color: var(--color-neutral-grayish-blue);
+    font-size: var(--font-size-quote);
+    font-weight: var(--font-weight-bold);
+    margin: 20px 0;
+    width: 100%;
+}
+
+.divider {
+   width: 80%;
+   margin: 18px auto;
+}
+
+#dice-button {
+    background-color: var(--color-primary-neon-green);
+    border-radius: 50%;
+    padding: 15px 16px 13px;
+    border: none;
+    margin: 0 auto -45px;
+}
+
+#dice-button .dice-img {
+    width: 18px;
+}
+
+#dice-button:hover {
+    box-shadow: 0 0 40px var(--color-primary-neon-green);
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    main {
+     width: 90%;
+     margin: 13rem auto;
+    }
+  }
+
+
+
